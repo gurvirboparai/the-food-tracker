@@ -1,0 +1,17 @@
+<!-- Create chart component -->
+<div class="container">
+  <div class="main">
+    <h2 class="mainHead">MACRONUTRIENTS DISTRIBUTION TODAY</h2>
+
+    <div class="chart">
+      <canvas
+        baseChart
+        type="pie"
+        [datasets]="foodChartData"
+        [labels]="foodChartLabels"
+        [legend]="true"
+      >
+      </canvas>
+    </div>
+  </div>
+</div>

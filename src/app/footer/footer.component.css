@@ -1,0 +1,21 @@
+/* Create footer styles */
+.footer {
+  clear: both;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #01DD9F;
+  height: 50px;
+  color: #394656;
+
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 25px;
+  text-align: center;
+}
+

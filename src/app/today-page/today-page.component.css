@@ -1,0 +1,90 @@
+/* Today List components */
+
+* {
+  color: #394656;
+}
+
+.table {
+  table-layout: fixed;
+  width: 75%;
+
+}
+
+.tbleBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h2 {
+  margin: 15px;
+}
+
+table th {
+  text-align: left;
+  padding-inline: 25px;
+  opacity: 0.4;
+}
+
+table td {
+  padding-inline: 25px;
+  padding-block: 10px;
+
+}
+
+.values {
+  transition: all 0.1s ease;
+}
+
+.values:hover {
+  background-color: #01DD9F;
+
+}
+
+.removeBtn {
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 0.4;
+  border: none;
+  background-color: transparent;
+  margin: 15px;
+  margin-left: 25px;
+  transition: all 0.1s ease;
+}
+
+.removeBtn:hover{
+  opacity: 1;
+  color: #dd3401;
+
+}
+
+/* MEDIA QUERIES FOR RESPONSIVE LAYOUT AT DIFFERENT SCREEN SIZES */
+
+/* Responsive Layout for screens smaller than 1198px */
+@media only screen and (max-width: 1198px) {
+  .table{
+    table-layout: auto;
+  }
+}
+
+/* Responsive Layout for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+
+
+  table th {
+    padding-inline: 10px;
+
+  }
+
+  table td {
+    padding-inline: 10px;
+
+  }
+
+}
+
+/* Responsive Layout for screens smaller than 480px */
+@media only screen and (max-width: 480px) {
+}

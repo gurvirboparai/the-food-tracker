@@ -1,0 +1,7 @@
+<!-- Import components -->
+<app-sidebar #sidebar (SidebarOpen)="sidebar.closeSidebar()"></app-sidebar>
+<app-header (SidebarOpen)="sidebar.openSidebar()"></app-header>
+<!-- Import router outlet -->
+<router-outlet></router-outlet>
+<!-- Import footer component -->
+<app-footer></app-footer>

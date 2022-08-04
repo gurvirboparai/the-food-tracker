@@ -1,0 +1,58 @@
+/* Create styles for header component */
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-left: 267px; */
+  background-color: #01DD9F;
+  height: 100px;
+  color: #394656;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 25px;
+  text-align: center;
+}
+
+.header img {
+  width: 60px;
+}
+
+.hamburger {
+  position: absolute;
+  width: 30px;
+  display: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.hamburger:hover{
+  transform: rotate(180deg);
+}
+
+
+/* MEDIA QUERIES FOR RESPONSIVE LAYOUT AT DIFFERENT SCREEN SIZES */
+
+/* Responsive Layout for screens smaller than 1198px */
+@media only screen and (max-width: 1198px) {
+
+}
+
+/* Responsive Layout for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+  .header img{
+    margin-left: 50px;
+  }
+
+  .hamburger{
+    display: block;
+  }
+}
+
+/* Responsive Layout for screens smaller than 480px */
+@media only screen and (max-width: 480px) {
+}

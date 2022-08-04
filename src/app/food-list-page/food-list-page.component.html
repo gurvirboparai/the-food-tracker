@@ -1,0 +1,28 @@
+<!-- Create food list component -->
+<div class="container">
+  <div class="main">
+    <h2>LIST OF MEALS</h2>
+
+    <div class="tbleBox">
+      <table class="table" [cellSpacing]="0">
+        <tr>
+          <th></th>
+          <th>Food Name</th>
+          <th>Carbohydrates</th>
+          <th>Protein</th>
+          <th>Fat</th>
+        </tr>
+        <tbody>
+          <tr class="values" *ngFor="let foods of foods">
+            <td><input type="checkbox" (click)="setAddSelectedId(foods.id, $event.target)"/></td>
+            <td>{{ foods.name }}</td>
+            <td>{{ foods.carbs }}</td>
+            <td>{{ foods.protein }}</td>
+            <td>{{ foods.fat }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="addBtn" class="addBtn" (click)="addFood()" >ADD TO TODAY'S LIST</button>
+    </div>
+  </div>
+</div>

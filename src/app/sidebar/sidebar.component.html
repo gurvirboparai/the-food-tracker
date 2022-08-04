@@ -1,0 +1,14 @@
+<!-- Create sidebar component -->
+<div class='sidebar' [class.open]="menuOpen$">
+  <div class="menu">
+    <svg (click)="closeSidebar()" xmlns="http://www.w3.org/2000/svg" class="close" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+    <h2>MENU</h2>
+    <ul>
+      <a (click)="closeSidebar()" routerLink="/today" routerLinkActive="active-link"><li>TODAY</li></a>
+      <a (click)="closeSidebar()" routerLink="/foodlist" routerLinkActive="active-link"><li>FOOD LIST</li></a>
+      <a (click)="closeSidebar()" routerLink="/macrochart" routerLinkActive="active-link"><li>CHART</li></a>
+    </ul>
+  </div>
+</div>
