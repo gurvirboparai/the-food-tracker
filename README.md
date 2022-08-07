@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
 ## Demo
-Visit [The Food Tracker](the-food-tracker.netlify.app) for the demo.
+Visit the-food-tracker.netlify.app for the demo.
 
 ## Development server
 
